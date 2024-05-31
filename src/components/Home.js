@@ -1,23 +1,32 @@
 // Home.js
 import React from 'react';
-import './home.css';
+import Card from './Card';
 
 const Home = () => {
-  const cards = Array.from({ length: 10 }).map((_, index) => (
-    <div className="card" key={index}>
-      <img src={`https://via.placeholder.com/300?text=Card+${index + 1}`} alt={`Card ${index + 1}`} className="card-image"/>
-      <div className="card-content">
-        <h3>Card {index + 1}</h3>
-        <p>This is the description for card {index + 1}.</p>
-      </div>
-    </div>
-  ));
+  // Array of image URLs
+  const imageUrls = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg",
+    "https://example.com/image4.jpg",
+    "https://example.com/image5.jpg",
+    "https://example.com/image6.jpg",
+    "https://example.com/image7.jpg",
+    "https://example.com/image8.jpg",
+    "https://example.com/image9.jpg",
+    "https://example.com/image10.jpg",
+  ];
 
   return (
-    <div className="home-container">
-      {cards}
+    <div className="card-container">
+      <h2>Home Page</h2>
+      <div className="card-grid">
+        {imageUrls.map((imageUrl, index) => (
+          <Card key={index} imageUrl={imageUrl} />
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default Home;

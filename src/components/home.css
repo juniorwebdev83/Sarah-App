@@ -1,56 +1,18 @@
 /* home.css */
+.card-container {
+  padding: 20px;
+}
 
-.home-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 20px;
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 100%;
-    margin: 10px 0;
-    background-color: #fff;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    padding: 10px;
-  }
-  
-  @media (min-width: 600px) {
-    .card {
-      flex-direction: row;
-    }
-  
-    .card img {
-      width: 300px;
-      height: auto;
-    }
-  
-    .card-content {
-      padding: 20px;
-    }
-  
-    .home-container .card {
-      width: calc(50% - 10px);
-    }
-  }
-  
-  @media (min-width: 900px) {
-    .home-container .card {
-      width: calc(33.333% - 10px);
-    }
-  }
-  
+}
+
+/* Add additional media queries for smaller screen sizes if needed */
