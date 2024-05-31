@@ -1,7 +1,6 @@
-// WhoIsSarah.js
 import React from 'react';
 import './whoissarah.css';
-import sarahImage from './photos/sarah.jpg';
+import sarahImage from '../images/sarah.jpg'; // Adjusted import path
 
 const WhoIsSarah = () => {
   return (
