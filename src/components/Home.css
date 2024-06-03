@@ -1,22 +1,36 @@
 /* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #77dd77; /* Pastel green */
+}
+
+.home-title {
+  font-weight: bold;
+}
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Align items horizontally in the center */
-  gap: 16px;
+  justify-content: center;
+  gap: 2px;
 }
 
+/* Card.css */
 .card {
   border: 1px solid #ccc;
   padding: 16px;
-  background-color: rgb(255, 255, 255); /* Set the background color to white */
-  max-width: calc(50% - 16px); /* Adjust width to fit two cards per row with gap */
+  margin: 16px;
+  background-color: white; /* Set the background color to white */
 }
 
 .card img {
   max-width: 100%;
   height: auto;
-  max-height: 200px; /* Set maximum height for the image */
+  max-height: 300px; /* Set maximum height for the image */
   object-fit: cover; /* Ensure the image covers the entire container */
 }
 
@@ -24,19 +38,6 @@
   padding: 8px;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-  .card {
-    max-width: calc(50% - 16px); /* Display two cards per row on smaller screens */
-  }
-}
-
-
-/* Home.css */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ffffcc; /* Pastel yellow */
+.card h3, .card p {
+  font-weight: bold; /* Make the card title and description bold */
 }

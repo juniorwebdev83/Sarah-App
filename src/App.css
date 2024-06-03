@@ -3,26 +3,31 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.nav-bar {
-  background-color: #faec9a;
+/* App.css */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #77dd77; /* Pastel green */
   padding: 10px;
 }
 
-.nav-bar ul {
+.nav-links {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-bar li {
+.nav-links li {
   display: inline;
-  margin-right: 10px;
 }
 
-.nav-bar a {
-  color: rgb(201, 250, 168);
+.nav-links a {
   text-decoration: none;
-}
-
-.nav-bar a:hover {
-  text-decoration: underline;
+  color: black;
+  font-weight: bold;
 }

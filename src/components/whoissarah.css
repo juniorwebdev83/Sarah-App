@@ -1,53 +1,40 @@
 .whois-container {
-  padding: 20px;
-  background-color: #e8f4f8;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px;
-  position: relative; /* Set the container as relative */
-}
-
-.whois-container h2 {
-  margin-bottom: 10px;
-}
-
-.card {
-  position: relative; /* Set the card as relative */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: #FFFACD; /* Pastel yellow */
+  min-height: 100vh;
+}
+
+.whois-container h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
   border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 10px 0;
-  background-color: #fff;
+  padding: 16px;
+  margin: 16px;
+  background-color: white; /* Set the background color to white */
+  width: 100%;
+  max-width: 800px; /* Max width of the card */
+  text-align: center; /* Center the text */
 }
 
 .card img {
   width: 100%;
   height: auto;
-  position: absolute; /* Position the image absolutely */
-  top: 50%; /* Move the top edge of the image to the middle */
-  left: 50%; /* Move the left edge of the image to the middle */
-  transform: translate(-50%, -50%); /* Center the image */
-  opacity: 0.5; /* Set the opacity of the image */
+  max-height: 500px; /* Adjust max height as needed */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  margin-bottom: 16px; /* Space between image and content */
 }
 
 .card-content {
-  padding: 10px;
+  padding: 8px;
+  text-align: left; /* Align text to the left */
 }
 
-@media (min-width: 600px) {
-  .card {
-      flex-direction: row;
-  }
-
-  .card img {
-      width: 350px;
-      height: auto;
-  }
-
-  .card-content {
-      padding: 20px;
-  }
+.card-content p {
+  margin: 0 0 10px; /* Margin around paragraphs */
 }

@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h2>Home Page</h2>
+     <h2 className="home-title">Home Page</h2>
       <div className="card-grid">
         {imageUrls.map((imageUrl, index) => (
           <Card key={index} imageUrl={imageUrl} />
