@@ -1,0 +1,53 @@
+.whois-container {
+  padding: 20px;
+  background-color: #e8f4f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  position: relative; /* Set the container as relative */
+}
+
+.whois-container h2 {
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative; /* Set the card as relative */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  position: absolute; /* Position the image absolutely */
+  top: 50%; /* Move the top edge of the image to the middle */
+  left: 50%; /* Move the left edge of the image to the middle */
+  transform: translate(-50%, -50%); /* Center the image */
+  opacity: 0.5; /* Set the opacity of the image */
+}
+
+.card-content {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .card {
+      flex-direction: row;
+  }
+
+  .card img {
+      width: 350px;
+      height: auto;
+  }
+
+  .card-content {
+      padding: 20px;
+  }
+}

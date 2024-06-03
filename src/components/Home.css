@@ -1,0 +1,31 @@
+/* Home.css */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align items horizontally in the center */
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: rgb(245, 229, 159); /* Set the background color to white */
+  max-width: calc(50% - 16px); /* Adjust width to fit two cards per row with gap */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Set maximum height for the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.card-content {
+  padding: 8px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .card {
+    max-width: calc(50% - 16px); /* Display two cards per row on smaller screens */
+  }
+}
