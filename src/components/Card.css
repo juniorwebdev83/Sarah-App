@@ -15,17 +15,18 @@
     gap: 2px;
   }
   
-  .card {
+/* Card.css */
+.card {
     border: 1px solid #ccc;
     padding: 16px;
+    margin: 16px;
     background-color: white; /* Set the background color to white */
-    max-width: 200px; /* Adjust as needed */
   }
   
   .card img {
     max-width: 100%;
     height: auto;
-    max-height: 200px; /* Set maximum height for the image */
+    max-height: 300px; /* Set maximum height for the image */
     object-fit: cover; /* Ensure the image covers the entire container */
   }
   

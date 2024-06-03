@@ -1,0 +1,28 @@
+/* NavBar.css */
+.navbar-container {
+    background-color: #ffffcc; /* Pastel yellow background color */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange links horizontally */
+  }
+  
+  .navbar-links li {
+    margin-right: 20px; /* Add margin between links */
+  }
+  
+  .navbar-links li:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

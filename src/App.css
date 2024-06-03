@@ -4,7 +4,7 @@
 @import 'tailwindcss/utilities';
 
 .nav-bar {
-  background-color: #333;
+  background-color: #faec9a;
   padding: 10px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .nav-bar a {
-  color: white;
+  color: rgb(201, 250, 168);
   text-decoration: none;
 }
 

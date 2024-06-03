@@ -9,7 +9,7 @@
 .card {
   border: 1px solid #ccc;
   padding: 16px;
-  background-color: rgb(245, 229, 159); /* Set the background color to white */
+  background-color: rgb(255, 255, 255); /* Set the background color to white */
   max-width: calc(50% - 16px); /* Adjust width to fit two cards per row with gap */
 }
 
@@ -28,4 +28,15 @@
   .card {
     max-width: calc(50% - 16px); /* Display two cards per row on smaller screens */
   }
+}
+
+
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffcc; /* Pastel yellow */
 }
