@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Sarah-App/static/css/main.ac0a1bbc.css",
+    "main.js": "/Sarah-App/static/js/main.5b2cc9cc.js",
+    "static/js/453.6a4b2016.chunk.js": "/Sarah-App/static/js/453.6a4b2016.chunk.js",
+    "static/media/sarah.jpg": "/Sarah-App/static/media/sarah.5fd48f278e9b7f461482.jpg",
+    "index.html": "/Sarah-App/index.html",
+    "main.ac0a1bbc.css.map": "/Sarah-App/static/css/main.ac0a1bbc.css.map",
+    "main.5b2cc9cc.js.map": "/Sarah-App/static/js/main.5b2cc9cc.js.map",
+    "453.6a4b2016.chunk.js.map": "/Sarah-App/static/js/453.6a4b2016.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac0a1bbc.css",
+    "static/js/main.5b2cc9cc.js"
+  ]
+}
